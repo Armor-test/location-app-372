@@ -1,0 +1,38 @@
+# CODEOWNERS file for location-app-372
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-reporting @Armor-test/dept-billing @Armor-test/dept-security
+
+# Directory ownership
+/pages/ @Armor-test/squad-api @Armor-test/unit-devops @Armor-test/dept-test
+/modules/ @Armor-test/squad-tooling @Armor-test/unit-design @Armor-test/grp-search
+/data/ @Armor-test/dept-reporting @Armor-test/dept-logging @Armor-test/grp-ui
+/migrations/ @Armor-test/grp-reporting @Armor-test/team-research @Armor-test/squad-cloud
+/lib/ @Armor-test/team-governance @Armor-test/team-notifications
+/db/ @Armor-test/unit-design @Armor-test/dept-reporting
+/shared/ @Armor-test/squad-frontend @Armor-test/unit-devops
+/api/ @Armor-test/squad-apps @Armor-test/unit-governance
+/dist/ @Armor-test/squad-api @Armor-test/squad-cache @Armor-test/team-notifications
+/static/ @Armor-test/team-research @Armor-test/team-governance @Armor-test/squad-ml
+/web/ @Armor-test/squad-database @Armor-test/unit-cloud @Armor-test/squad-ml
+
+# File type ownership
+*.graphql @Armor-test/dept-reporting @Armor-test/dept-security
+*.config @Armor-test/team-reporting @Armor-test/grp-integration
+*.cs @Armor-test/dept-identity @Armor-test/squad-api @Armor-test/squad-research
+*.css @Armor-test/dept-release @Armor-test/squad-product @Armor-test/team-core
+*.rs @Armor-test/squad-database @Armor-test/team-logging
+*.yml @Armor-test/grp-api @Armor-test/dept-security @Armor-test/unit-cloud
+*.go @Armor-test/unit-governance @Armor-test/squad-database @Armor-test/team-governance
+*.php @Armor-test/team-research @Armor-test/grp-payments
+*.properties @Armor-test/unit-cloud @Armor-test/dept-security
+*.proto @Armor-test/unit-governance @Armor-test/squad-ml
+*.js @Armor-test/dept-billing @Armor-test/team-security @Armor-test/dept-ui
+*.scala @Armor-test/squad-database @Armor-test/dept-identity @Armor-test/dept-ui
+*.rb @Armor-test/dept-release @Armor-test/team-core @Armor-test/squad-cloud
+*.h @Armor-test/team-security @Armor-test/squad-reporting @Armor-test/squad-performance
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
